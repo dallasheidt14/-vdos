@@ -16,7 +16,7 @@ killed.
 
 | # | Mechanism | Type | Corpus | Status |
 |---|---|---|---|---|
-| 1 | Downmarket unbundling | SCREENABLE ⭐ | O*NET + CareerOneStop → BLS OEWS wages | not started |
+| 1 | Downmarket unbundling | SCREENABLE ⭐ | Upwork/Fiverr (demand, primary) + O*NET/CareerOneStop (enrichment) | **researched, spec inverted** |
 | 2 | Geographic arbitrage | SCREENABLE | Census CBP (+ BLS QCEW) | not started |
 | 3 | Free IP → product | SCREENABLE | USPTO / PatentsView (+ Gutenberg, museum OA, Internet Archive) | not started |
 | 4 | Unread corpus → insight | SCREENABLE | County/municipal records, dockets, UCC-1, CT logs, trademarks, NIH/NSF, import manifests | not started |
@@ -26,7 +26,8 @@ killed.
 | 8 | Claims → evidence | CHECKLIST (half) | data.gov CKAN (metadata only) | not started |
 
 Build order: 1 → 3 → 2 → 4, then the checklists are run by judgment, not
-built. Start with O*NET.
+built. Start with mechanism 1's demand scrape (Upwork/Fiverr), NOT
+O*NET — the spec was inverted to demand-first (see below).
 
 > Note: the sections below are now filed by mechanism (#1–#8). Four
 > legacy kills fall **outside the eight** — three "aggregation" ideas
@@ -35,6 +36,31 @@ built. Start with O*NET.
 > coverage* shapes had no mechanism equivalent, and that is itself the
 > finding: those framings mostly produced automation, not AI-enabled
 > money mechanisms, which the reframe now screens out earlier.
+
+### Mechanism #1 — research survivors (not yet validated)
+
+Downmarket unbundling, spec inverted to demand-first (research:
+`research/onet-findings.md`). O*NET was demoted from generator to
+enrichment because it's a supply-side labor corpus, blind to the
+priced-out tier. Three candidates cleared the research screen; each
+still needs Step 5 costly-signal validation before it's a live play:
+
+1. **Micro-business HR / compliance docs** — handbooks, offer letters,
+   policies for sub-20-employee firms. Incumbent **$1,500–5,000**
+   (attorney/consultant). **Least crowded** of the three — the sleeper.
+   Landmine: employment-law-adjacent — "not legal advice" framing +
+   attorney-reviewed templates.
+2. **Standalone financial plans** (not investment management). Incumbent
+   **~$3,000** comprehensive plan. Constraint: personalized investment
+   advice trips **SEC / state RIA registration** — viable version is
+   education + planning frameworks, not "buy VTI."
+3. **Small-business plan writing / market analysis.** Incumbent
+   **$2,000–6,000**. **Cleanest regulatory profile** of the three;
+   priced-out tier is first-time founders and loan applicants.
+
+Dead on arrival for this mechanism (do not re-open): resumes, logos,
+document translation, consumer nutrition, generic legal templates,
+consumer tax filing — see `MECHANISMS.md`.
 
 ---
 

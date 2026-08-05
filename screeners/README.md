@@ -12,8 +12,9 @@ by judgment: skip straight to landmines and costly-signal validation.
 
 One directory per screenable mechanism, in build order:
 
-- `onet/` — **mechanism 1, downmarket unbundling** (O*NET → BLS OEWS
-  wages). First to build; **not built yet.**
+- `onet/` — **mechanism 1, downmarket unbundling**. **ON HOLD** — the
+  O*NET-first spec was inverted to demand-first; the primary corpus is
+  now Upwork/Fiverr, O*NET is only enrichment. See `onet/README.md`.
 - geographic arbitrage (Census CBP) — later
 - free IP → product (USPTO / PatentsView) — later
 - unread corpus → insight (county records, dockets, …) — later
@@ -24,9 +25,11 @@ Track which are started/killed in `../LEDGER.md` → Mechanisms status.
 
 - **Cheap deterministic rules before any LLM pass.** Stage the cut so
   you never spend tokens on millions of raw records.
-- **The demand join is mandatory.** Join the corpus to independent
-  proof people actually buy the thing — it's what separates a list from
-  a business.
+- **The demand join is the FIRST filter, not the last.** Supply-side
+  corpora (O*NET, BLS, Census) filter candidates; they never generate
+  them. Start from independent proof people pay — it's what separates a
+  list from a business. A screen that starts from a government database
+  is built backwards.
 - **Weekend-replicable = feature, not business.** If the core is
   rebuildable in a weekend against the same APIs, the moat is the
   assembly, not the code.
