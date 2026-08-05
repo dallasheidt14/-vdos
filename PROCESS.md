@@ -35,9 +35,16 @@ re-enumerate them here; that list is canonical in one place.
 **Branch before doing anything else — the two kinds are not worked the
 same way:**
 
-- **SCREENABLE** (a public corpus exists): the work is a pipeline.
-  Build it under `screeners/<mechanism>/`, cheap rules before any LLM
-  pass, and finish with the demand join. Then continue to Step 2.
+- **SCREENABLE** (a demand corpus exists): the work is a pipeline.
+  Build it under `screeners/<mechanism>/`, **start with the demand
+  join** — it's the first filter, not the last — then narrow with the
+  supply corpus, cheap rules before any LLM pass. Then continue to
+  Step 2. Supply-side government corpora (O*NET, BLS, Census) filter
+  candidates; they never generate them. If a screen starts from a
+  government database, it's built backwards (see MECHANISMS.md).
+  A "demand corpus" need not be a clean public API — the best one is
+  often a scrape (Upwork/Fiverr revealed prices for mechanism #1). It's
+  still SCREENABLE; the pipeline just starts with a scraper.
 - **CHECKLIST** (judgment over an enumerable list): do NOT build a
   screener. Over-engineering a pipeline for a judgment call is a
   documented failure mode of this project. Skip Steps 2–3 and go
@@ -55,15 +62,17 @@ their current task faster," discard. That's automation and it's
 saturated.
 
 ## Step 2 — Specify the play
-Universal — every mechanism, whatever its shape:
+Universal — every mechanism, whatever its shape (demand proof first,
+because it's the first filter):
+- Demand proof: independent evidence people already pay for this (the
+  mandatory demand join — see Standing rules). No demand proof, no
+  candidate.
 - Input: the cheap or free source it runs on (which corpus or signal?)
 - Artifact: what gets produced that was previously too expensive to
   make per-recipient
 - Buyer: who pays — the business, or the end consumer?
 - Channel: how the artifact reaches the buyer
 - Pricing: per-lead, subscription, rev share, one-off?
-- Demand proof: independent evidence people already pay for this (the
-  mandatory demand join — see Standing rules)
 
 Then add the axis your mechanism turns on — do not force the others:
 - Trigger -> artifact (#5): the Trigger (detectable event or state)
@@ -117,9 +126,11 @@ Apply to every mechanism (the first two mainly to SCREENABLE ones):
   deterministic filters cut the corpus down before any token spend.
   LLM-ing millions of raw records burns four figures before you learn
   anything.
-- **The demand join is mandatory, not optional.** Joining the corpus
-  to independent proof that people buy the thing is the only step that
-  separates a list from a business.
+- **The demand join is the FIRST filter, not the last.** Supply-side
+  corpora (O*NET, BLS, Census) narrow candidates; they never generate
+  them. Start from independent proof that people buy the thing — it's
+  the only step that separates a list from a business, and a screen
+  that starts from a government database is built backwards.
 - **Weekend-replicable = feature, not business.** If a developer can
   rebuild the core in a weekend against the same public APIs, the moat
   is the assembly (fragmented ETL, licensed data, distribution), not
