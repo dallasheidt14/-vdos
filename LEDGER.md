@@ -7,6 +7,35 @@ kill the aggregation shape, which may still work in another industry.
 
 ---
 
+## Mechanisms status
+
+The eight money mechanisms from `MECHANISMS.md`, worked one at a time.
+This is the top-level tracker. Status: not started / in progress /
+killed.
+
+| # | Mechanism | Type | Corpus | Status |
+|---|---|---|---|---|
+| 1 | Downmarket unbundling | SCREENABLE ⭐ | O*NET + CareerOneStop → BLS OEWS wages | not started |
+| 2 | Geographic arbitrage | SCREENABLE | Census CBP (+ BLS QCEW) | not started |
+| 3 | Free IP → product | SCREENABLE | USPTO / PatentsView (+ Gutenberg, museum OA, Internet Archive) | not started |
+| 4 | Unread corpus → insight | SCREENABLE | County/municipal records, dockets, UCC-1, CT logs, trademarks, NIH/NSF, import manifests | not started |
+| 5 | Trigger → artifact | CHECKLIST (aiming screenable via CBP) | Trigger taxonomy; CBP to aim | not started |
+| 6 | Format arbitrage | CHECKLIST | — (source content, free or licensable) | not started |
+| 7 | Dead asset revival | CHECKLIST (partial) | Expired-domain drop lists + backlink/traffic (paid layer) | not started |
+| 8 | Claims → evidence | CHECKLIST (half) | data.gov CKAN (metadata only) | not started |
+
+Build order: 1 → 3 → 2 → 4, then the checklists are run by judgment, not
+built. Start with O*NET.
+
+> Note: the sections below (**Play shapes tried**, **Killed cells**,
+> **Live plays**) predate MECHANISMS.md and still use the older
+> six-"play-shape" taxonomy. Two of those names (*Total coverage*,
+> *Aggregation*) have no equivalent among the eight mechanisms. These
+> cells will be refiled under the mechanism taxonomy as each mechanism
+> is worked; until then, read them in the old vocabulary.
+
+---
+
 ## 1. Play shapes tried
 
 Which shapes actually produce survivors. Too early to mean much, but

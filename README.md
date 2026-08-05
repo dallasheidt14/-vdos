@@ -26,10 +26,16 @@ has ever read.
 | File | Purpose | Churn |
 |---|---|---|
 | `PROCESS.md` | The play-scanner spec (v2.0) | rarely |
-| `MECHANISMS.md` | The eight screening machines that generate plays — which corpus, how to screen, what's a pipeline vs a checklist | rarely |
-| `LEDGER.md` | Running record — play shapes tried, killed cells, live plays, industry notes | every pass |
+| `MECHANISMS.md` | The eight money mechanisms, their corpora, and which are screenable vs checklist | rarely |
+| `LEDGER.md` | Running record — mechanisms status, play shapes tried, killed cells, live plays, industry notes | every pass |
 | `plays/TEMPLATE.md` | Blank pass, mirrors the PROCESS steps | rarely |
 | `plays/` | One file per play pass, raw evidence | every pass |
+| `screeners/` | One pipeline per SCREENABLE mechanism (checklist mechanisms get none) | per mechanism |
+
+Build order starts with **O*NET** (mechanism 1, downmarket unbundling):
+cleanest corpus, and its output is a ranked list of services rather
+than a list of markets to go research. See `MECHANISMS.md` for the full
+order.
 
 ## How to run a pass
 
