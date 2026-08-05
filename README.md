@@ -26,6 +26,7 @@ has ever read.
 | File | Purpose | Churn |
 |---|---|---|
 | `PROCESS.md` | The play-scanner spec (v2.0) | rarely |
+| `MECHANISMS.md` | The eight screening machines that generate plays — which corpus, how to screen, what's a pipeline vs a checklist | rarely |
 | `LEDGER.md` | Running record — play shapes tried, killed cells, live plays, industry notes | every pass |
 | `plays/TEMPLATE.md` | Blank pass, mirrors the PROCESS steps | rarely |
 | `plays/` | One file per play pass, raw evidence | every pass |

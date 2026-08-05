@@ -74,5 +74,8 @@ unpublished information. Only the second kind is an edge.
 
 ---
 
+See `MECHANISMS.md` for the eight machines behind these shapes — which
+public corpus feeds each, how to screen it, and which are pipelines vs
+judgment checklists.
 See `LEDGER.md` for play shapes tried, killed cells, and live plays.
 See `plays/TEMPLATE.md` to run a new play pass.
