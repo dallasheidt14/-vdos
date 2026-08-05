@@ -1,17 +1,18 @@
 # VDOS — Venture Discovery Operating System
 
-A niche scanner. Finds businesses shaped around a price that no longer
-exists.
+A play scanner. Finds repeatable mechanics — trigger -> artifact ->
+channel -> buyer -> pricing — that exist because a business was shaped
+around a price that no longer exists.
 
-**What changed from v2.0:** the original architecture tried to forecast
-where technology and markets would be in 3–12 months, then derive
-opportunities from that forecast. That was dropped. Forecasting is the
-hard part and the least valuable part — and an opportunity you can see
-six months out is one everyone else can see too. Predictable futures
-are crowded futures.
-
-This version does the opposite: it notices the present faster than
-other people, using evidence that already exists.
+**Why plays, not niches:** the earlier version scanned industries and
+scored niches. But an industry is not portable — everything learned in
+one is stranded there. A *play* is portable. The origin case (vehicle
+purchase -> AI rendering of the buyer's car in a shop's wrap -> direct
+mail -> the wrap shop pays) is not an "automotive" idea; it's a
+trigger -> personalized-artifact play that happens to be aimed at wrap
+shops. Aim the same machinery somewhere else and it still works. So the
+unit of discovery is the play shape, and the industry is just where you
+point it. Build the machinery once, swap the industry.
 
 **Core premise:** a 100x price drop doesn't make the old behavior
 cheaper — it makes a *different* behavior rational. When custom renders
@@ -24,18 +25,21 @@ has ever read.
 
 | File | Purpose | Churn |
 |---|---|---|
-| `PROCESS.md` | The locked v1.0 spec | rarely |
-| `LEDGER.md` | Running record — niches scored, candidates killed and live | every pass |
-| `niches/` | One file per pass, raw evidence | every pass |
+| `PROCESS.md` | The play-scanner spec (v2.0) | rarely |
+| `LEDGER.md` | Running record — play shapes tried, killed cells, live plays, industry notes | every pass |
+| `plays/TEMPLATE.md` | Blank pass, mirrors the PROCESS steps | rarely |
+| `plays/` | One file per play pass, raw evidence | every pass |
 
 ## How to run a pass
 
-1. Copy `niches/TEMPLATE.md` to `niches/<niche>.md`
-2. Work through `PROCESS.md` steps 0–6
-3. Append results to `LEDGER.md`
+1. Copy `plays/TEMPLATE.md` to `plays/<play>.md`
+2. Work through `PROCESS.md` steps 1–5
+3. Append results to `LEDGER.md` — kills as (play shape x industry)
+   cells, survivors as live plays
 
 ## Standing rule
 
-The scanner only produces hypotheses. The information that converts a
-hypothesis to knowledge lives in phone calls, not corpora. Cap the
-engine at "good enough for ten candidates" and spend the time on Step 6.
+The scanner only produces hypotheses. What converts a hypothesis to
+knowledge lives in a costly signal, not a corpus. Cap the engine at
+"good enough for ten candidates" and spend the time on Step 5
+validation.
