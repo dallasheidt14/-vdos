@@ -1,9 +1,10 @@
 # LEDGER
 
 Killed cells are as valuable as live ones. The unit here is a CELL — a
-(play shape x industry) pair — not an industry. Killing "tournament
-scheduling" kills one cell (aggregation x youth sports); it does not
-kill the aggregation shape, which may still work in another industry.
+(mechanism x industry) pair — not an industry. Killing "self-employed
+income analysis" kills one cell (downmarket unbundling x mortgage); it
+does not kill downmarket unbundling, which may still work in another
+industry.
 
 ---
 
@@ -27,51 +28,54 @@ killed.
 Build order: 1 → 3 → 2 → 4, then the checklists are run by judgment, not
 built. Start with O*NET.
 
-> Note: the sections below (**Play shapes tried**, **Killed cells**,
-> **Live plays**) predate MECHANISMS.md and still use the older
-> six-"play-shape" taxonomy. Two of those names (*Total coverage*,
-> *Aggregation*) have no equivalent among the eight mechanisms. These
-> cells will be refiled under the mechanism taxonomy as each mechanism
-> is worked; until then, read them in the old vocabulary.
+> Note: the sections below are now filed by mechanism (#1–#8). Four
+> legacy kills fall **outside the eight** — three "aggregation" ideas
+> (two were really automation, one a marketplace) and one
+> "total-coverage" verification play. The old *Aggregation* and *Total
+> coverage* shapes had no mechanism equivalent, and that is itself the
+> finding: those framings mostly produced automation, not AI-enabled
+> money mechanisms, which the reframe now screens out earlier.
 
 ---
 
-## 1. Play shapes tried
+## 1. Mechanisms tried
 
-Which shapes actually produce survivors. Too early to mean much, but
-track it.
+Which mechanisms actually produce survivors. Too early to mean much,
+but track it. (Numbering matches the Mechanisms status table.)
 
-| Play shape | Killed cells | Live plays |
+| Mechanism | Killed cells | Live plays |
 |---|---|---|
-| Trigger -> personalized artifact | 2 | 2 |
-| Public record -> private insight | 1 | 0 |
-| Total coverage | 1 | 1 |
-| Evidence replacing claims | 1 | 1 |
-| Downmarket unbundling | 1 | 0 |
-| Aggregation | 3 | 0 |
+| #1 Downmarket unbundling | 1 | 1 |
+| #4 Unread corpus -> insight | 1 | 0 |
+| #5 Trigger -> artifact | 2 | 2 |
+| #8 Claims -> evidence | 1 | 1 |
+| Outside the eight (automation / aggregation / verification) | 4 | 0 |
 
-Early read: trigger -> artifact carries the most. Aggregation has
-fired three times and survived zero — it keeps landing in spaces that
-already have a funded platform.
+Mechanisms #2, #3, #6, #7 not yet tried.
+
+Early read: trigger -> artifact carries the most survivors so far. The
+four "outside the eight" kills all died as automation, a marketplace,
+or verification against a funded incumbent — exactly the framings the
+reframe now screens out before they reach the ledger.
 
 ---
 
 ## 2. Killed cells — do not re-research
 
 The candidate that died is named so the exact idea isn't re-run, but
-each kill is filed under its shape so the pattern stays visible.
+each kill is filed under its mechanism so the pattern stays visible.
 
-| Play shape | Industry | Killed by |
+| Mechanism | Industry | Killed by |
 |---|---|---|
-| Trigger -> personalized artifact | youth sports | per-player highlight video — Trace (PlayerFocus), Veo |
-| Trigger -> personalized artifact | automotive | vehicle-purchase-triggered mailers — DPPA restricts DMV data for marketing |
-| Public record -> private insight | mortgage | condo / HOA doc review — Rexera (exhibiting at MBA Annual) |
-| Total coverage | mortgage | wire / title fraud — FundingShield, $3T volume |
-| Evidence replacing claims | micro-SaaS | verification / anti-fake-MRR — TrustMRR; also bad customer |
-| Downmarket unbundling | mortgage | self-employed income analysis — IncomeXpert, Blueprint, Fannie's own calculator |
-| Aggregation | youth sports | tournament scheduling engine — Fastbreak AI; also automation |
-| Aggregation | youth sports | referee assigning — Refr Sports |
-| Aggregation | micro-SaaS | micro-acquisition marketplace — Acquire.com, Microns, IndieMaker, Little Exits |
+| #1 Downmarket unbundling | mortgage | self-employed income analysis — IncomeXpert, Blueprint, Fannie's own calculator |
+| #4 Unread corpus -> insight | mortgage | condo / HOA doc review — Rexera (exhibiting at MBA Annual) |
+| #5 Trigger -> artifact | youth sports | per-player highlight video — Trace (PlayerFocus), Veo |
+| #5 Trigger -> artifact | automotive | vehicle-purchase-triggered mailers — DPPA restricts DMV data for marketing |
+| #8 Claims -> evidence | micro-SaaS | verification / anti-fake-MRR — TrustMRR; also bad customer |
+| Outside the eight — automation | youth sports | tournament scheduling engine — Fastbreak AI; also automation |
+| Outside the eight — automation | youth sports | referee assigning — Refr Sports |
+| Outside the eight — marketplace/aggregation | micro-SaaS | micro-acquisition marketplace — Acquire.com, Microns, IndieMaker, Little Exits |
+| Outside the eight — verification (total-coverage) | mortgage | wire / title fraud — FundingShield, $3T volume |
 
 ---
 
@@ -80,7 +84,7 @@ each kill is filed under its shape so the pattern stays visible.
 Each carries a full Step 2 spec and Step 5 validation.
 
 ### 3.1 Per-player recruiting fit packet
-- **Shape:** Trigger -> personalized artifact (also downmarket unbundling)
+- **Mechanism:** #5 Trigger -> artifact (secondary: #1 downmarket unbundling)
 - **Industry:** youth sports
 
 Step 2:
@@ -105,7 +109,7 @@ Moat: the 77k-team dataset, not the model.
 Risk: brutal churn (kids age out), hard seasonality.
 
 ### 3.2 Club evidence reports
-- **Shape:** Evidence replacing claims
+- **Mechanism:** #8 Claims -> evidence
 - **Industry:** youth sports
 
 Step 2:
@@ -125,7 +129,7 @@ Step 5:
 - Kill number: TBD
 
 ### 3.3 Per-agent referral artifacts — LANDMINE
-- **Shape:** Trigger -> personalized artifact
+- **Mechanism:** #5 Trigger -> artifact
 - **Industry:** mortgage
 
 Step 2:
@@ -149,7 +153,7 @@ Step 5:
 - Kill number: LOs are happy with what they already send
 
 ### 3.4 Past-client portfolio monitoring
-- **Shape:** Total coverage (also downmarket unbundling)
+- **Mechanism:** #1 Downmarket unbundling (total-coverage character: monitors the entire book, not the top 20)
 - **Industry:** mortgage
 
 Step 2:
@@ -206,10 +210,10 @@ a mortgage referral source may be given.
 
 ---
 
-## 5. Open play shapes
+## 5. Open search modes
 
-Second-order and structural angles the scanner doesn't surface on its
-own — run them deliberately:
+Second-order and structural angles none of the eight mechanisms
+surface on their own — run them deliberately:
 
 - **Second-order effects:** what breaks when *everyone* adopts the
   first-order thing

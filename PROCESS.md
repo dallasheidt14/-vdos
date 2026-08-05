@@ -133,5 +133,5 @@ Apply to every mechanism (the first two mainly to SCREENABLE ones):
 See `MECHANISMS.md` for the eight mechanisms — what each is, which
 public corpus feeds it, how to screen it, and which are pipelines vs
 judgment checklists.
-See `LEDGER.md` for play shapes tried, killed cells, and live plays.
+See `LEDGER.md` for mechanisms tried, killed cells, and live plays.
 See `plays/TEMPLATE.md` to run a new play pass.

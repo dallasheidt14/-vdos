@@ -11,8 +11,9 @@ purchase -> AI rendering of the buyer's car in a shop's wrap -> direct
 mail -> the wrap shop pays) is not an "automotive" idea; it's a
 trigger -> personalized-artifact play that happens to be aimed at wrap
 shops. Aim the same machinery somewhere else and it still works. So the
-unit of discovery is the play shape, and the industry is just where you
-point it. Build the machinery once, swap the industry.
+unit of discovery is the mechanism, and the industry is just where you
+point it (a play is `mechanism x industry`). Build the machinery once,
+swap the industry.
 
 **Core premise:** a 100x price drop doesn't make the old behavior
 cheaper — it makes a *different* behavior rational. When custom renders
@@ -27,7 +28,7 @@ has ever read.
 |---|---|---|
 | `PROCESS.md` | The play-scanner spec (v2.0) | rarely |
 | `MECHANISMS.md` | The eight money mechanisms, their corpora, and which are screenable vs checklist | rarely |
-| `LEDGER.md` | Running record — mechanisms status, play shapes tried, killed cells, live plays, industry notes | every pass |
+| `LEDGER.md` | Running record — mechanisms status, mechanisms tried, killed cells, live plays, industry notes | every pass |
 | `plays/TEMPLATE.md` | Blank pass, mirrors the PROCESS steps | rarely |
 | `plays/` | One file per play pass, raw evidence | every pass |
 | `screeners/` | One pipeline per SCREENABLE mechanism (checklist mechanisms get none) | per mechanism |
@@ -41,7 +42,7 @@ order.
 
 1. Copy `plays/TEMPLATE.md` to `plays/<play>.md`
 2. Work through `PROCESS.md` steps 1–5
-3. Append results to `LEDGER.md` — kills as (play shape x industry)
+3. Append results to `LEDGER.md` — kills as (mechanism x industry)
    cells, survivors as live plays
 
 ## Standing rule
