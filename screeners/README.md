@@ -16,7 +16,10 @@ One directory per screenable mechanism, in build order:
   O*NET-first spec was inverted to demand-first; the primary corpus is
   now Upwork/Fiverr, O*NET is only enrichment. See `onet/README.md`.
 - geographic arbitrage (Census CBP) — later
-- free IP → product (USPTO / PatentsView) — later
+- free IP → product — **no screener planned.** The expired-patent
+  pipeline is killed; the surviving version (public-domain books/audio
+  → KDP/ACX, museum images → POD) is demand-first judgment on Amazon
+  charts, not a corpus to grind. See `../MECHANISMS.md` #3.
 - unread corpus → insight (county records, dockets, …) — later
 
 Track which are started/killed in `../LEDGER.md` → Mechanisms status.

@@ -22,6 +22,14 @@ to the priced-out tier by definition — those people aren't transacting,
 so no labor or revenue statistic counts them. A supply corpus can
 describe the incumbent; only demand evidence finds who's priced out.
 
+**TWO CONSECUTIVE KILLS, SAME CAUSE.** O*NET (mechanism #1) and expired
+patents (mechanism #3) both died because the screen started from a
+supply corpus. Supply data describes what exists and what it costs to
+produce. It is structurally blind to what anyone wants. Before
+researching any mechanism, state where the DEMAND evidence comes from.
+If the answer is "we'll figure that out after the screen," the
+mechanism is already dead.
+
 **Status key:** SCREENABLE = corpus exists, build a pipeline.
 CHECKLIST = judgment over an enumerable list, do NOT build a pipeline.
 
@@ -111,32 +119,44 @@ Used to require living in both.
 
 ## 3. Free IP -> product — SCREENABLE
 
-Expired patents, public domain books/art/music, lapsed designs. AI's
-job is the SCREEN, not the building. ~90% of patents lapse early,
-mostly unpaid maintenance fees, so the pool is enormous and mostly
-junk.
+Public-domain IP where AI does the value-add and there is no factory,
+no container, and no competitor who can suspend your listing. The
+surviving versions are digital or print-on-demand — NOT expired-patent
+manufacturing (killed variant below).
 
-**Corpus:** USPTO bulk data / PatentsView. Also Gutenberg, museum open
-access, Internet Archive.
+**PRIMARY: public-domain books / audio -> Kindle KDP + ACX / Audible.**
+Zero inventory, zero tariffs, zero factory, zero takedown-by-competitor
+risk. AI is the genuine enabler: translation, modernization,
+summarization, narration, cover art. Strongest fit for a solo builder.
+- Corpus: Project Gutenberg, Internet Archive, LibriVox.
+- Demand is checkable DIRECTLY on Amazon's book charts / category BSR —
+  the demand-first join is native, not bolted on.
+- Screen: category demand on Amazon first -> pick a public-domain work
+  whose AI-enhanced edition (new translation, modernized text, fresh
+  narration) fills a visible gap -> ship. No physical goods.
 
-**Screen (demand-first):**
-1. DEMAND FIRST: pick target product CATEGORIES with proven Amazon
-   sales volume and a manageable seller count. Start from what sells,
-   not from the patent pool.
-2. Filter the patent corpus to those categories: utility patents lapsed
-   for unpaid maintenance, CPC in the chosen consumer-product classes,
-   has drawings, reasonable claim count. Cheap rules, no LLM — cut
-   ~3M -> ~50K before any token spend.
-3. LLM pass: abstract + first claim + drawing description ->
-   {what it is, materials, mfg complexity 1-5, tooling required, unit
-   cost tier}
-4. Auto-kill: electronics, safety certification, tooling over budget
-5. Score: demand / mfg complexity, penalized by seller count
+**SECONDARY: open-access museum images -> print-on-demand.** Met,
+Rijksmuseum, Smithsonian, NYPL open collections -> posters / apparel /
+home goods via Printful / Printify on Etsy / Amazon Merch. No inventory,
+no tariff. Demand visible via Etsy / Merch search. AI enables curation,
+upscaling, mockups.
 
-**Traps:** patent expiry frees the invention, NOT the brand — the
-trademark is often where the value was. Most patents lapsed because
-the product didn't sell, so the demand join is mandatory, not
-optional.
+**KILLED VARIANT — expired patents -> manufacture in China -> Amazon.**
+Do NOT resurrect this. Reasons (full analysis:
+`research/expired-patents-findings.md`, logged in LEDGER):
+- The screen (PatentsView + USPTO maintenance-fee file) is a free-API
+  weekend project — fails our own weekend-replication rule.
+- Lapse is a NEGATIVE demand signal: ~54% of patents are abandoned for
+  unpaid fees because the owner judged them worthless. Cheap patents
+  are disproportionately rejected products.
+- Patents are legal documents, not build plans — drawings omit
+  dimensions deliberately; you still need a designer, CAD, prototype.
+- De minimis is gone (China May 2025, global Aug 2025, indefinite June
+  2026); ~30–35% tariffs hit a US reseller, not the factory selling
+  direct. Chinese sellers are now >50% of Amazon's active base.
+- Amazon IP takedowns (RAV/APEX) presume you guilty and are timed for
+  Q4; a copy of a formerly-patented product is the exact takedown
+  target. ~$10–12.5k single-SKU capital, $5k–50k+ OEM tooling.
 
 ---
 
@@ -257,7 +277,7 @@ stakes + existing number is wrong or missing):**
 
 ## Dead on arrival — do not re-research
 
-These are now free features inside ChatGPT / Canva / TurboTax and the
+Most are now free features inside ChatGPT / Canva / TurboTax and the
 like. A developer replicates the core in a weekend against the same
 APIs. Feature, not business — do not open a pass on any of them:
 
@@ -267,10 +287,16 @@ APIs. Feature, not business — do not open a pass on any of them:
 - Consumer meal plans / macro coaching
 - Generic legal templates
 - Consumer tax filing (1040)
+- Private-label Amazon FBA arbitrage for a US solo operator —
+  structural cost disadvantage vs Chinese factory-direct sellers
+  (>50% of Amazon's active base) plus ~30–35% tariff exposure since
+  de minimis ended. Not a "free feature" failure — a structural-cost
+  one, but just as dead.
 
-The pattern: raw generation, no proprietary workflow, no liability
-assumed, no regulatory barrier navigated. If the only differentiation
-is "I call an LLM with a nice prompt," it belongs here.
+The pattern for the first six: raw generation, no proprietary workflow,
+no liability assumed, no regulatory barrier navigated — "I call an LLM
+with a nice prompt." The last is different: the economics are lost
+before AI enters. Either way, do not open a pass.
 
 ---
 
@@ -294,8 +320,9 @@ registration. Licensing status predicts viability better than crowding.
 
 1. **Downmarket unbundling** — demand from Upwork/Fiverr, O*NET only as
    enrichment (spec inverted — see `research/onet-findings.md`)
-2. **Free IP -> product** (USPTO) — biggest corpus, physical output;
-   demand categories first, then the patent pool
+2. **Free IP -> product** — public-domain books/audio (KDP/ACX),
+   demand checked on Amazon book charts; museum images -> print-on-
+   demand secondary. Expired-patent manufacturing KILLED (see #3)
 3. **Geographic arbitrage** (CBP) — demand in the absent metro first
 4. **Unread corpus** — pick one source, ETL moat is real
 5-8. Checklists, not pipelines. Do NOT build a screener for these.

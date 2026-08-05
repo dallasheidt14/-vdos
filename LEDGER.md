@@ -18,7 +18,7 @@ killed.
 |---|---|---|---|---|
 | 1 | Downmarket unbundling | SCREENABLE ⭐ | Upwork/Fiverr (demand, primary) + O*NET/CareerOneStop (enrichment) | **researched, spec inverted** |
 | 2 | Geographic arbitrage | SCREENABLE | Census CBP (+ BLS QCEW) | not started |
-| 3 | Free IP → product | SCREENABLE | USPTO / PatentsView (+ Gutenberg, museum OA, Internet Archive) | not started |
+| 3 | Free IP → product | SCREENABLE | Public-domain books/audio (Gutenberg/LibriVox → KDP/ACX); museum OA → POD. **Expired-patent variant KILLED** | **researched, variant killed** |
 | 4 | Unread corpus → insight | SCREENABLE | County/municipal records, dockets, UCC-1, CT logs, trademarks, NIH/NSF, import manifests | not started |
 | 5 | Trigger → artifact | CHECKLIST (aiming screenable via CBP) | Trigger taxonomy; CBP to aim | not started |
 | 6 | Format arbitrage | CHECKLIST | — (source content, free or licensable) | not started |
@@ -61,6 +61,56 @@ still needs Step 5 costly-signal validation before it's a live play:
 Dead on arrival for this mechanism (do not re-open): resumes, logos,
 document translation, consumer nutrition, generic legal templates,
 consumer tax filing — see `MECHANISMS.md`.
+
+### Mechanism #3 — killed variant: expired patents → China → Amazon
+
+KILLED (research: `research/expired-patents-findings.md`). The mechanism
+survives as public-domain books/audio + museum images (see
+`MECHANISMS.md` #3); the expired-patent-manufacturing version is dead.
+Do not re-research. Reasons:
+
+- **Screen is a weekend project** — PatentsView + the USPTO
+  maintenance-fee file is a free-API build. Fails our own
+  weekend-replication = feature-not-business rule.
+- **Lapse is a NEGATIVE demand signal** — ~54% of patents are abandoned
+  for unpaid maintenance fees because the owner judged them worthless.
+  Cheap available patents are disproportionately rejected products.
+- **Patents are not build plans** — drawings omit dimensions
+  deliberately (exact measurements can narrow a claim). A factory can't
+  quote from a patent; you still need a designer, CAD, prototype.
+- **Tariffs / de minimis** — exemption eliminated (China May 2025,
+  global Aug 2025, indefinite June 2026); ~30–35% effective tariffs on
+  Chinese consumer goods hit a US reseller, not the factory selling
+  direct.
+- **Marketplace consolidated against this operator** — Chinese sellers
+  now >50% of Amazon's global active base and 55.9% of the top 10,000
+  US sellers; new US seller launches at a decade low, −44% YoY.
+- **Amazon IP takedowns** — competitors can suspend a listing during
+  review, timed for Q4 (documented: a listing pulled over an 1895
+  patent the complainant didn't own). A copy of a formerly-patented
+  product is the exact takedown profile.
+- **Capital** — realistic single-SKU startup $10,000–12,500; OEM
+  tooling $5k–50k+ with 5k–10k MOQs.
+
+### Convergent candidate — Amazon opportunity scanner (not yet evaluated)
+
+Both research passes (#1 O*NET, #3 expired patents) independently landed
+on the SAME pivot: **build the demand-first TOOL, not the product.**
+That convergence across two unrelated passes is the signal worth
+logging.
+
+- **What:** an Amazon opportunity scanner sold to sellers — Keepa
+  `product_finder` API + Product Opportunity Explorer signals (search
+  volume, aging incumbents, out-of-stock rate, low ad saturation) + AI
+  that turns competitor review complaints into product-improvement
+  briefs ("what to build better").
+- **Why it keeps surfacing:** demand-first by construction, recurring
+  SaaS revenue, AI is the enabling piece, and it sidesteps inventory,
+  tariffs, and takedowns entirely.
+- **Status: not yet evaluated.** Convergent recommendation ≠ validated
+  demand — has not been through a mechanism screen or Step 5. Still
+  needs a costly signal (e.g. 20 paying sellers at $29–49/mo off a free
+  demand-report lead magnet).
 
 ---
 
