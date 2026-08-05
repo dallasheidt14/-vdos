@@ -1,13 +1,25 @@
 # VDOS — Play Scanner, Process v2.0
 
-A play is a repeatable mechanic, not a market:
+A **play** is a money mechanism aimed at an industry:
 
-    trigger -> artifact -> channel -> buyer -> pricing
+    play = mechanism  x  industry
 
-Example (the origin case): vehicle purchase -> AI rendering of that
-buyer's car model in the shop's wrap -> direct mail -> wrap shop pays.
+The mechanism is the portable part — the repeatable way AI turns a
+cheap input into something someone pays for. The industry is just where
+you point it. The eight mechanisms live in `MECHANISMS.md`.
 
-Plays port across industries. Industries do not port. Build the
+Each mechanism has its own shape. The origin case is one of them —
+trigger -> artifact:
+
+    vehicle purchase -> AI rendering of that buyer's car in the shop's
+    wrap -> direct mail -> the wrap shop pays
+
+That shape (trigger -> artifact -> channel -> buyer -> pricing) is
+mechanism #5's, not every mechanism's — downmarket unbundling, free IP
+-> product, and geographic arbitrage have no trigger at all. So specify
+each play in its own mechanism's vocabulary (Step 2), not this one's.
+
+Mechanisms port across industries. Industries do not port. Build the
 machinery once, swap the industry.
 
 ## Core premise
@@ -32,23 +44,44 @@ same way:**
   straight to Step 4 (landmines), then Step 5 (costly-signal
   validation).
 
+One exception: **trigger -> artifact (#5)** is a checklist for
+*enumerating* plays (that's judgment, not a corpus to grind), but
+*aiming* a chosen play at industries is screenable via CBP. Run
+Steps 2–5 for it; just don't build a screener to generate the trigger
+ideas themselves.
+
 Disqualifier (both branches): if the mechanism reduces to "they do
 their current task faster," discard. That's automation and it's
 saturated.
 
 ## Step 2 — Specify the play
-- Trigger: what detectable event fires it?
-- Artifact: what gets produced that was previously too expensive
-  per-recipient?
-- Channel: how does it reach the recipient?
+Universal — every mechanism, whatever its shape:
+- Input: the cheap or free source it runs on (which corpus or signal?)
+- Artifact: what gets produced that was previously too expensive to
+  make per-recipient
 - Buyer: who pays — the business, or the end consumer?
+- Channel: how the artifact reaches the buyer
 - Pricing: per-lead, subscription, rev share, one-off?
+- Demand proof: independent evidence people already pay for this (the
+  mandatory demand join — see Standing rules)
+
+Then add the axis your mechanism turns on — do not force the others:
+- Trigger -> artifact (#5): the Trigger (detectable event or state)
+  plus the density check — fire only where the absence is anomalous
+  against the local norm
+- Downmarket unbundling (#1): the licensed service, and the priced-out
+  tier that becomes newly servable
+- Geographic arbitrage (#2): the two markets — where it works, where
+  it's absent — and whether the gap is explained or genuine
+- Free IP -> product (#3): the specific expired IP, and manufacturing
+  feasibility
+- Unread corpus (#4): the source, and the decision each record informs
 
 ## Step 3 — Aim it (score candidate industries)
 | Factor | Good | Bad |
 |---|---|---|
 | Ticket size to the buyer | high customer LTV | low |
-| Trigger data | public or purchasable, legally usable | restricted |
+| Source data (trigger, corpus, or records) | public or purchasable, legally usable | restricted |
 | Incumbents FOR THIS PLAY | nobody | funded and shipping |
 | Buyer fragmentation | many small buyers | few, or one PE sponsor |
 | Channel legality | unconstrained | governed by statute |

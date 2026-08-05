@@ -5,18 +5,22 @@ Time spent:
 
 ---
 
-## Step 1 — Play shape
+## Step 1 — Mechanism + branch
 
-Pick one (the rest are here for reference):
+Pick one of the eight mechanisms in `../MECHANISMS.md` (a play is
+`mechanism x industry`):
 
-1. Trigger -> personalized artifact
-2. Public record -> private insight
-3. Total coverage
-4. Evidence replacing claims
-5. Downmarket unbundling
-6. Aggregation
+**Selected mechanism (#, name):**
 
-**Selected shape:**
+**Type:** SCREENABLE / CHECKLIST
+
+Branch:
+- SCREENABLE — build the pipeline under `../screeners/<mechanism>/`,
+  cheap rules before any LLM pass, then continue to Step 2.
+- CHECKLIST — do NOT build a screener; skip Steps 2–3 and go to Step 4.
+  (Exception: trigger -> artifact is checklist to enumerate but its
+  aiming, Step 3, is screenable — run Steps 2–5, just don't build a
+  trigger-idea screener.)
 
 Automation check: is this just "they do their current task faster"? If
 yes, discard.
@@ -25,17 +29,27 @@ yes, discard.
 
 ## Step 2 — Specify the play
 
-- Trigger (detectable event that fires it):
+Universal:
+- Input (cheap/free source it runs on):
 - Artifact (previously too expensive per-recipient):
-- Channel (how it reaches the recipient):
 - Buyer (business or end consumer):
+- Channel (how it reaches the buyer):
 - Pricing (per-lead / subscription / rev share / one-off):
+- Demand proof (independent evidence people already pay for this):
+
+Mechanism-specific axis (fill only the one that applies):
+- Trigger -> artifact: the trigger + density check (fire only where the
+  absence is anomalous against the local norm)
+- Downmarket unbundling: the licensed service + the priced-out tier
+- Geographic arbitrage: the two markets + is the gap real or explained
+- Free IP -> product: the specific expired IP + mfg feasibility
+- Unread corpus: the source + the decision each record informs
 
 ---
 
 ## Step 3 — Aim it (score candidate industries)
 
-| Industry | Ticket size | Trigger data | Incumbents for this play | Buyer fragmentation | Channel legality | Verdict |
+| Industry | Ticket size | Source data (legally usable?) | Incumbents for this play | Buyer fragmentation | Channel legality | Verdict |
 |---|---|---|---|---|---|---|
 
 Reminder: PE presence only matters if YOUR BUYERS are consolidated.
@@ -65,6 +79,6 @@ unpublished information. Only the second is an edge.
 
 ## Notes for the ledger
 
-- New killed cells (play shape x industry):
-- Shape tally updates:
+- New killed cells (mechanism x industry):
+- Mechanisms status updates:
 - Anything that suggests changing PROCESS.md:
